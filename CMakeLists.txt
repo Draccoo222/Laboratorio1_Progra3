@@ -14,6 +14,11 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(Laboratorio1_Progra3
   main.cpp
+  vehicle.h vehicle.cpp
+  IFlyable.h
+  car.h car.cpp
+  truck.h truck.cpp
+  drone.h drone.cpp
 )
 target_link_libraries(Laboratorio1_Progra3 Qt${QT_VERSION_MAJOR}::Core)
 

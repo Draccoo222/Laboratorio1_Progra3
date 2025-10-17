@@ -1,10 +1,12 @@
 #include <QCoreApplication>
+#include <iostream>
+
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    //LOL
+    std::cout << 1 << std::endl;
 
     return a.exec();
 }
