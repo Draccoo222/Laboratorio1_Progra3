@@ -19,6 +19,7 @@ add_executable(Laboratorio1_Progra3
   car.h car.cpp
   truck.h truck.cpp
   drone.h drone.cpp
+  bike.h bike.cpp
 )
 target_link_libraries(Laboratorio1_Progra3 Qt${QT_VERSION_MAJOR}::Core)
 

@@ -17,7 +17,7 @@ class Vehicle
         virtual void refuel(short lvl) = 0;
         virtual void simulateHour();
 
-        ~Vehicle();
+        virtual ~Vehicle() = default;
 
     protected:
         short fuelLvl;

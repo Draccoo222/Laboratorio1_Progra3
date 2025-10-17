@@ -8,11 +8,17 @@ void Drone::refuel(short cant){
 }
 
 void Drone::fly(int min){
+    if(fuelLvl == 0){
+        return;
+    }
     fuelLvl -= min*3;
     Vehicle::normalizeFuelLvl();
 }
 
 void Drone::simulateHour(){
+    if(fuelLvl == 0){
+        return;
+    }
     fuelLvl -= 8;
     Vehicle::normalizeFuelLvl();
     if(fuelLvl < 20){

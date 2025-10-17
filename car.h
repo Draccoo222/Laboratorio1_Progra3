@@ -10,6 +10,8 @@ class Car: public Vehicle
         void refuel(short cant) override;
         void status() const override;
         void simulateHour() override;
+
+
 };
 
 #endif // CAR_H

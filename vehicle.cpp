@@ -20,3 +20,15 @@ void Vehicle::normalizeFuelLvl(){
     num = std::max(num, 0);
     fuelLvl = (short) num;
 }
+
+void Vehicle::simulateHour(){
+    if(fuelLvl == 0){
+        return;
+    }
+    fuelLvl -= 5;
+    normalizeFuelLvl();
+    if(fuelLvl < 20){
+        std::cout << "Warning, Low Fuel for vehicle: " << fuelLvl << std::endl;
+    }
+
+}

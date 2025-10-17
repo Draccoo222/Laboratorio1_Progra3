@@ -2,6 +2,6 @@
 #define IFLYABLE_H
 struct IFlyable{
     virtual void fly(int min) = 0;
-    ~IFlyable();
+    virtual ~IFlyable() = default;
 };
 #endif // IFLYABLE_H
