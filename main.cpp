@@ -21,6 +21,8 @@ int main(int argc, char *argv[])
     vector<Vehicle*> vehicles;
 
     vehicles.push_back(new Car("Toyota Camri 2010", 100));
+    vehicles.push_back(new Truck("Toyota 1990", 100));
+    vehicles.push_back(new Bike("Yamaha 2020", 100));
     vehicles.push_back(new Drone("Dji mini3", 100));
 
 
